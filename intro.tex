@@ -1,0 +1,65 @@
+\section{Introduction}
+In the past few decades, we have witnessed a spectacular information explosion over the Internet. 
+Hundreds of thousands of users are consuming the Internet through various services, such as websites, mobile applications, and online games.
+The service providers, at the back-end side, are supported by state-of-the-art infrastructures on the cloud, such as Amazon Web Service~\cite{aws} and
+Microsoft Azure~\cite{azure}. 
+Focusing on providing the services at scale, 
+virtualization is one of the emerging technologies used in data centers and cloud environments to 
+improve both hardware and development efficiency.
+
+At the system level, the virtual machine is a widely-adopted virtualization method~\cite{vm}, which isolates CPU, memory, 
+block I/O, network resources, etc~\cite{jithin2014virtual}.
+In a large-scale system, however,
+providing services through virtual machines would mean that the users are probably 
+running many duplicate instances of the same OS and many redundant boot volumes~\cite{medina2014survey}. 
+Recent research shows that virtual machines suffer from noticeable performance overhead, large storage requirement, and 
+limited scalability~\cite{xu2014managing}. 
+
+To address these limitations, containers were designed for deploying
+and running distributed applications without launching entire virtual machines. 
+Instead, multiple isolated service units of the application, 
+called containers, share the host operating system and physical resources.
+The concept of container virtualization is yesterday's news;
+Unix-like operating systems leveraged the technology for over a decade and modern 
+big data processing plforms utilize containers as a basic computing unit~\cite{wang2014fresh, wang2015omo, wang2017seina}. 
+However, new containerization platforms, such as Docker, make it into the mainstream of application development.
+Based on previously available open-source technologies 
+(e.g. cgroup), Docker introduces a way of simplifying the tooling required to create and manage containers.
+On a physical machine, containers are essentially just regular processes; in the system view, that enjoy a virtualized resource environment, not only just CPU and
+memory, but also bandwidth, ports, disk i/o, etc. 
+
+We use ``Docker run image'' command to start a Docker container on physical machines. 
+In addition to the disk image that we would like to
+initiate, users can specify a few options, such as ``-m'' and ``-c'', to limit a container's access to resources. 
+While options set a maximum amount, resource contention still happens among containers on every host machine.
+%Starting with various images, a container can provide different services, which leads to a diverse resource demands. 
+%For example, a clustering service, e.g. Kmeans, may need more computational power and a logging service, e.g. Logstash, 
+%may request more bandwidth. 
+Upon receiving ``Docker run'' commands from clients, the cluster, as the first step, should select a 
+physical machine to host those containers. The default container placement scheme, named Spread, uses a bin-pack strategy and tries to
+assign a container on the node with the fewest running containers. 
+While Spread aims to equally distribute tasks among all nodes, it omits two major characteristics of the system. First of all,
+the nodes in a cluster do not necessary have to be identical with each other. It is a common setting to have multiple node types, 
+in terms of total resource, in the cluster. For example, a cutting edge server can easily run more processes concurrently than a off-the-shelf desktop.
+Secondly, the resource demands from containers are different. 
+Starting with various images, services provided by containers are varied, which leads to a diverse resource demands. 
+For instance, a clustering service, e.g. Kmeans, may need more computational power and a logging service, e.g. Logstash, 
+may request more bandwidth. 
+
+In this project, we propose a new container placement scheme, \sol, a Dynamic
+and Resource-Aware Placement Scheme. Different from the default Spread scheme, \sol~ assigns containers based on current available 
+resources in a heterogeneous cluster and dynamic demands from containers of various services. First, \sol~ identifies
+the dominant resource type of a service by monitoring containers that offer this service. It, then, places the containers with 
+complementary needs to the same machine in order to reduce the balance resource usages on the nodes. 
+If one type of resource, finally, becomes a bottleneck in the system, it migrates the resource-intensive containers to other nodes.
+Our main contributions are as follows:
+%\vspace{-0.2in}
+\begin{itemize}
+ \item We introduce the concept of dominant resource type that considers the dynamic demands from different services.
+ \item We propose a complete container placement scheme, \sol, which assigns the tasks to appropriate nodes and balance resource usages
+ in a heterogeneous cluster.
+ \item We implement \sol~ into the popular container orchestration tool, Swarmkit, and conduct the experiment with 18 services in 4 types.
+ The evaluation demonstrates that \sol~ outperforms the default Spread and reduces usage as much as 42.6\% on one specific node.
+ 
+\end{itemize}
+

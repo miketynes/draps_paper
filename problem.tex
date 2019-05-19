@@ -1,0 +1,100 @@
+\section{Problem Formulation}
+The \sol~ scheduler aims to optimize the container placement such that the available
+resources on each worker node are maximized. In this paper, we assume that a container requires multiple resources such as memory, CPU, bandwidth, and I/O for running its services. Since the services and their workloads in a container change over time, the resource requirements in a container also exhibit temporal
+dynamics. Therefore, we formulate the resource requirements of a container as a function of time.
+Denote $r_i^{k}(t)$ as the $k$th resource requirement of the $i$th container at time $t$. Let $x_{i,j}=\{0, 1\}$ be the container placement indicator.
+If $x_{i,j}=1$, the $i$th container is placed in the $j$th work node. Denote $W_j^k$ as the total amount of the $k$th
+resource in the $j$th work node. Let $\mathcal{C}$, $\mathcal{N}$, $\mathcal{K}$ be the set of containers, work nodes,
+and the resources, respectively. The utilization ratio of the $k$ resource in the $j$th work node can be expressed as
+\begin{equation}\label{eq:work_util_ratio}
+  u^k_j(t)=\frac{\sum_{i\in\mathcal{C}}x_{i,j}r_i^{k}(t)}{W_j^k}
+\end{equation}
+We assume that the utilization ratio of the $j$th work node is defined by its highest utilized resource.
+Then, the utilization ratio of the $j$th work node is $\max_{k\in\mathcal{K}}u^k_j(t)$.
+The highest resource utilization among all the work nodes can be identified as
+\begin{equation}\label{eq:util_worker}
+  \nu=\max_{j\in\mathcal{N}}\max_{k\in\mathcal{K}}u^k_j(t).
+\end{equation}
+Since our objective when designing the \sol~ scheduler is to maximize the available
+resources in each worker node, the \sol~ scheduling problem can be formulated as
+\begin{align}\label{eq:sched_problem}
+  \max_{x_{i,j}} &\;\;\;\;\; \nu \\
+  s.t. &\;\;\;\;\; \sum_j x_{i,j}=1;\forall i\in\mathcal{C};\\
+       &\;\;\;\;\; u^k_j(t)\leq 1, \forall k\in\mathcal{K}, \forall j\in\mathcal{N}.
+\end{align}
+The constraint in E.q. (4) requires that each container should be placed in
+one worker node. The constrain in E.q. (5) enforces that the utilization ratio of any resource in a worker is less than one.
+\begin{lemma}
+The \sol~ scheduling problem is NP-hardness.
+\end{lemma}
+\begin{proof}
+In proving the Lemma, we consider a simple case of the \sol~ scheduling problem in which the resource
+requirements of each container are constant over time. The simplified \sol~ scheduling problem equals to
+the multidimensional bin packing problem which is NP-hard~\cite{Bansal:2006:IAA,Meyerson:2013:OMLB,Im:2015:TBO}.
+Hence, the lemma can be proved by reducing any instance of the multidimensional bin packing to the simplified \sol~
+scheduling problem. For the sake of simplicity, we omit the detail proof in the paper.
+\end{proof}
+
+\begin{comment}
+\begin{table}[ht]
+\caption{Notation Table}
+ \centering
+ \small
+ \begin{tabular}{c l}
+  \hline
+  \hline
+  $M_{id}$ / $W_{id}$ &  Manager ID / Worker ID \\
+  \hline
+  $S_{id}$ / $C_{id}$ & Service ID / Container ID \\
+  \hline
+  $W_j^{k}$ & The total $k$th resource on the $j$th worker node\\
+  \hline
+  $r_i^{k}(t)$ &  the $k$th resource requirement of \\
+  & the $i$th container at time $t$\\
+  \hline
+  $\{KS\}$ & A set stores known services IDs \\
+  \hline
+  $DOM(S_{id})$ & A function records dominate resource attribute \\
+
+
+  \hline
+  \hline
+\label{table:locations}
+\end{tabular}
+\end{table}
+
+\end{comment}
+
+
+\begin{comment}
+\begin{table}[ht]
+\caption{Notation Table}
+ \centering
+ \small
+ \begin{tabular}{c l}
+  \hline
+  \hline
+  $M_{id}$ / $W_{id}$ &  Manager ID / Worker ID \\
+  \hline
+  $S_{id}$ / $C_{id}$ & Service ID / Container ID \\
+  \hline
+  $W_{mem}$ & Current available memory on a specific worker \\
+  \hline
+  $W_{cpu}$ & Current available CPU on a specific worker \\
+  \hline
+  $W_{net}$ & Current available bandwidth on a specific worker \\
+  \hline
+  $W_{io}$ & Current I/O wait time on a specific worker \\
+  \hline
+  $\{KS\}$ & A set stores known services IDs \\
+  \hline
+  $DOM(S_{id})$ & A function records dominate resource attribute \\
+
+
+  \hline
+  \hline
+\label{table:locations}
+\end{tabular}
+\end{table}
+
+\end{comment} 

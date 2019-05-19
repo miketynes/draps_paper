@@ -1,0 +1,45 @@
+\section{DRAP System}
+\label{sys}
+In this section, we, first, discuss the original modules in Docker manager and worker. Then, we illustrate the
+major components in DRAP.
+
+\subsection{Framework of Manager and Worker Nodes}
+As described in the previous section, there are multiple managers and workers in the system.
+A manager has six hierarchical modules.
+{\bf Client API}, accepts the commands from clients and creates service objects;
+{\bf Orchestrator}, handles the lifecycle of service objects and manages mechanics for service discovery and load balancing;
+{\bf Allocator}, provides network model specific allocation functionality and allocates IP addresses to tasks;
+{\bf Scheduler}, assigns tasks to worker nodes;
+{\bf Dispatcher}, communicates with worker nodes, checks their states, and collects the {\bf heartbeats} from them;
+
+A worker node, on the other hand, manages the Dockers containers and send back their states to managers through periodical heartbeat messages.
+An {\bf executor} is used to run the tasks that assign to the containers in this worker.
+
+
+\subsection{DRAP modules}
+To simplify the implementation, we integrate the DRAP components into the current framework. As shown on Fig~\ref{fig:drap},
+it mainly consists of three parts, a container monitor that resides in the worker nodes, a worker monitor, and a DRAP scheduler that
+implement in manager nodes.
+
+{\bf Container Monitor}: a container monitor collects the runtime resources usage statistics of Docker containers on worker nodes. 
+At each application level, the monitored resources contain memory, CPU percentage, block I/O, and network I/O. 
+The average usage report in a given time window of top users will be injected into the DRAP-Heartbeat messages and sent back to managers.
+At the host system level, the tracking information includes, I/O wait, reminder percentage of available memory, CPU, and bandwidth. 
+The information is used by worker nodes to conduct a self-examination to identify the bottleneck of itself. 
+If a bottleneck is found, an DRAP-Alert message will be produced and sent back to managers.
+
+{\bf Work Monitor}: a worker monitor processes the messages from worker nodes. It maintains a table for each worker and the corresponding containers. 
+Through analyzing the data, it will generate tasks, such as migrating a resource-intensive container to another host.
+
+{\bf DRAP-Scheduler}: the DRAP-Scheduler assigns a task to a specific node based on the current available resources. For a duplicated Docker container,
+DRAP-Scheduler checks its characteristics on resources consumption, 
+such as memory intensive, through the records of the previous containers in the same services.
+
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.99\linewidth]{drap}
+\caption{Docker Framework with DRAP Implemention}
+\label{fig:drap} 
+\end{figure}
