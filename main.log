@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 MAY 2019 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 MAY 2019 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -960,7 +960,7 @@ Package epstopdf Info: Source file: <figs/start-single.eps>
 (epstopdf)                    size: 9170 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/start-single-eps-conv
 erted-to.pdf figs/start-single.eps>
-(epstopdf)             \includegraphics on input line 100.
+(epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/start-single-eps-converted-to.pdf, id=20, 578.16pt x 289.08pt>
@@ -968,7 +968,7 @@ File: figs/start-single-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/start-single-eps-converted-to.pdf>
 Package pdftex.def Info: figs/start-single-eps-converted-to.pdf used on input l
-ine 100.
+ine 102.
 (pdftex.def)             Requested size: 201.60077pt x 100.80016pt.
 ) (./system.tex
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
@@ -984,6 +984,7 @@ Underfull \hbox (badness 4001) in paragraph at lines 19--22
 k. As
  []
 
+[3 <./figs/start-single-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/drap.eps>
 (epstopdf)                    date: 2019-05-19 17:37:37
 (epstopdf)                    size: 302292 bytes
@@ -994,14 +995,14 @@ Package epstopdf Info: Source file: <figs/drap.eps>
 .pdf figs/drap.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
-<figs/drap-eps-converted-to.pdf, id=21, 487.8225pt x 225.84375pt>
+
+<figs/drap-eps-converted-to.pdf, id=30, 487.8225pt x 225.84375pt>
 File: figs/drap-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/drap-eps-converted-to.pdf>
 Package pdftex.def Info: figs/drap-eps-converted-to.pdf used on input line 41.
 (pdftex.def)             Requested size: 201.60077pt x 93.33398pt.
-) (./problem.tex [3 <./figs/start-single-eps-converted-to.pdf> <./figs/drap-eps
--converted-to.pdf>]
+) (./problem.tex
 ** ATTENTION: \proof is deprecated (line 30). Use \IEEEproof instead.
 Excluding 'comment' comment. Excluding 'comment' comment.) (./solution.tex
 Underfull \hbox (badness 7851) in paragraph at lines 2--10
@@ -1018,7 +1019,7 @@ Package epstopdf Info: Source file: <figs/cpu.eps>
 pdf figs/cpu.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
-<figs/cpu-eps-converted-to.pdf, id=49, 578.16pt x 289.08pt>
+<figs/cpu-eps-converted-to.pdf, id=31, 578.16pt x 289.08pt>
 File: figs/cpu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/cpu-eps-converted-to.pdf>
@@ -1035,7 +1036,7 @@ pdf figs/mem.eps>
 (epstopdf)             \includegraphics on input line 27.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/mem-eps-converted-to.pdf, id=50, 578.16pt x 289.08pt>
+<figs/mem-eps-converted-to.pdf, id=32, 578.16pt x 289.08pt>
 File: figs/mem-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/mem-eps-converted-to.pdf>
@@ -1052,7 +1053,7 @@ o.pdf figs/netio.eps>
 (epstopdf)             \includegraphics on input line 35.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/netio-eps-converted-to.pdf, id=51, 578.16pt x 289.08pt>
+<figs/netio-eps-converted-to.pdf, id=33, 578.16pt x 289.08pt>
 File: figs/netio-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/netio-eps-converted-to.pdf>
@@ -1070,16 +1071,20 @@ Package epstopdf Info: Source file: <figs/blockio.eps>
 (epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/blockio-eps-converted-to.pdf, id=52, 578.16pt x 289.08pt>
+<figs/blockio-eps-converted-to.pdf, id=34, 578.16pt x 289.08pt>
 File: figs/blockio-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/blockio-eps-converted-to.pdf>
 Package pdftex.def Info: figs/blockio-eps-converted-to.pdf used on input line 4
 3.
 (pdftex.def)             Requested size: 123.84283pt x 61.9216pt.
- [4] Excluding 'comment' comment.
-[5 <./figs/cpu-eps-converted-to.pdf> <./figs/mem-eps-converted-to.pdf> <./figs/
-netio-eps-converted-to.pdf> <./figs/blockio-eps-converted-to.pdf>]) (./eval.tex
+ [4 <./figs/drap-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Excluding 'comment' comment. [5 <./figs/cpu-eps-converted-to.pdf> <./figs/mem-e
+ps-converted-to.pdf> <./figs/netio-eps-converted-to.pdf> <./figs/blockio-eps-co
+nverted-to.pdf>]) (./eval.tex
 Package epstopdf Info: Source file: <figs/25memcpu1.eps>
 (epstopdf)                    date: 2019-05-19 17:37:36
 (epstopdf)                    size: 26173 bytes
@@ -1090,6 +1095,7 @@ Package epstopdf Info: Source file: <figs/25memcpu1.eps>
 ed-to.pdf figs/25memcpu1.eps>
 (epstopdf)             \includegraphics on input line 11.
 Package epstopdf Info: Output file is already uptodate.
+
 <figs/25memcpu1-eps-converted-to.pdf, id=82, 433.62pt x 216.81pt>
 File: figs/25memcpu1-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1192,7 +1198,7 @@ Underfull \hbox (badness 2035) in paragraph at lines 64--68
 []\OT1/ptm/m/n/10 We im-ple-ment our new con-tainer place-ment scheme,
  []
 
-Excluding 'comment' comment.
+Excluding 'comment' comment. [6]
 Package epstopdf Info: Source file: <figs/25containernum.eps>
 (epstopdf)                    date: 2019-05-19 17:37:37
 (epstopdf)                    size: 29241 bytes
@@ -1204,7 +1210,7 @@ nverted-to.pdf figs/25containernum.eps>
 (epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/25containernum-eps-converted-to.pdf, id=88, 361.35pt x 252.945pt>
+<figs/25containernum-eps-converted-to.pdf, id=91, 361.35pt x 252.945pt>
 File: figs/25containernum-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/25containernum-eps-converted-to.pdf>
@@ -1222,14 +1228,13 @@ o.pdf figs/25net.eps>
 (epstopdf)             \includegraphics on input line 148.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/25net-eps-converted-to.pdf, id=89, 361.35pt x 252.945pt>
+<figs/25net-eps-converted-to.pdf, id=92, 361.35pt x 252.945pt>
 File: figs/25net-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/25net-eps-converted-to.pdf>
 Package pdftex.def Info: figs/25net-eps-converted-to.pdf used on input line 148
 .
 (pdftex.def)             Requested size: 120.95892pt x 84.67244pt.
- [6]
 Package epstopdf Info: Source file: <figs/memcpu1.eps>
 (epstopdf)                    date: 2019-05-19 17:37:37
 (epstopdf)                    size: 25818 bytes
@@ -1374,21 +1379,16 @@ File: figs/iowait-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figs/iowait-eps-converted-to.pdf used on input line 26
 2.
 (pdftex.def)             Requested size: 120.95892pt x 84.67244pt.
-) (./conclude.tex
-Underfull \vbox (badness 3780) has occurred while \output is active []
-
-)
-(./main.bbl [7 <./figs/25memcpu1-eps-converted-to.pdf> <./figs/25memcpu2-eps-co
-nverted-to.pdf> <./figs/25memcpu3-eps-converted-to.pdf> <./figs/25memcpu1g-eps-
-converted-to.pdf> <./figs/25memcpu2g-eps-converted-to.pdf> <./figs/25memcpu3g-e
-ps-converted-to.pdf> <./figs/25containernum-eps-converted-to.pdf> <./figs/25net
--eps-converted-to.pdf>]
-Underfull \vbox (badness 1472) has occurred while \output is active []
-
- [8 <./figs/memcpu1-eps-converted-to.pdf> <./figs/memcpu2-eps-converted-to.pdf>
- <./figs/memcpu3-eps-converted-to.pdf> <./figs/memcpu1g-eps-converted-to.pdf> <
-./figs/memcpu2g-eps-converted-to.pdf> <./figs/memcpu3g-eps-converted-to.pdf> <.
-/figs/120workload-eps-converted-to.pdf> <./figs/iowait-eps-converted-to.pdf>])
+) (./conclude.tex [7 <./figs/25memcpu1-eps-converted-to.pdf> <./figs/25memcpu2-
+eps-converted-to.pdf> <./figs/25memcpu3-eps-converted-to.pdf> <./figs/25memcpu1
+g-eps-converted-to.pdf> <./figs/25memcpu2g-eps-converted-to.pdf> <./figs/25memc
+pu3g-eps-converted-to.pdf> <./figs/25containernum-eps-converted-to.pdf> <./figs
+/25net-eps-converted-to.pdf>])
+(./main.bbl [8 <./figs/memcpu1-eps-converted-to.pdf> <./figs/memcpu2-eps-conver
+ted-to.pdf> <./figs/memcpu3-eps-converted-to.pdf> <./figs/memcpu1g-eps-converte
+d-to.pdf> <./figs/memcpu2g-eps-converted-to.pdf> <./figs/memcpu3g-eps-converted
+-to.pdf> <./figs/120workload-eps-converted-to.pdf> <./figs/iowait-eps-converted
+-to.pdf>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1409,7 +1409,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  24698 strings out of 492995
  486923 string characters out of 6132704
- 504009 words of memory out of 5000000
+ 508009 words of memory out of 5000000
  27802 multiletter control sequences out of 15000+600000
  48805 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1430,7 +1430,7 @@ live/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
 s/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on main.pdf (9 pages, 363541 bytes).
+Output written on main.pdf (9 pages, 367921 bytes).
 PDF statistics:
  241 PDF objects out of 1000 (max. 8388607)
  162 compressed objects within 2 object streams

@@ -10,8 +10,8 @@
 %Based on previously available open-source technologies (e.g. cgroup), Docker introduces a way of simplifying the tooling required to create and manage containers.
 
 A Docker worker machine runs a local Docker daemon. 
-New containers may be created on a worker by sending commands to its local daemon, such as ``docker
-run -it ubuntu bash''.
+New containers may be created on a worker by sending commands to its local daemon, such as \replaced{\texttt{docker run -it ubuntu bash}}{``docker
+	run -it ubuntu bash''}. \added{Not sure how IEEE format wants in-line code examples. Further, what journal are we aiming for, and how do they want things? I should look at their templates.}
 A Docker container image is a lightweight, stand-alone, executable package of a piece of software that 
 includes everything needed to run it: code, run-time, system tools, system libraries, and settings.
 In general, each container targets a specific service of an application. If the application needs to scale up this particular service, 
@@ -72,7 +72,8 @@ for container orchestration in the cluster environment.
 
 There are two types of nodes in a cluster that are running SwarmKit, worker nodes, and manager nodes.
 Worker nodes are responsible for running tasks; on the other hand, 
-manager nodes accept specifications from the user and are responsible for reconciling the desired state with the actual cluster state.
+manager nodes accept specifications from the user and are responsible for reconciling the desired state with the actual cluster state. \added{[we need to say abit more about what that means. What about the state could be 
+	undesired vs desired?]}
 %Fig.~\ref{fig:swarmkit} shows the decentralized architecture of a SwarmKit cluster. 
 %A manager node is in charge of several worker nodes and there is a overlap between 
 %manager nodes to tolerate failures. Worker and manager nodes are equal in the system since a worker node can be promoted to a manager and a manager node 
@@ -80,17 +81,18 @@ manager nodes accept specifications from the user and are responsible for reconc
 %The Raft consensus algorithm is used to ensure that all the manager nodes that are in charge of managing and 
 %scheduling tasks in the cluster are storing the same consistent states. 
 
-A Docker container can be initiated with specific requirements (e.g. memory and CPU) and user-defined labels.
+\added{[What is the point of this paragraph? We just jump in saying we can set limits at init time. (Note that we can also update them with \texttt{docker update ...}). Is this even relevant for this paper, since we are 
+	talking about container \textit{placement} which is a cluster-level, rather than container-level, decision process]} A Docker container can be initiated with specific requirements (e.g. memory and CPU) and user-defined labels.
 The scheduler that runs on a manager combines the user-input information with states of each node to make various scheduling decisions, 
-such as choosing the best node to perform a task. 
-Specifically, it utilizes filters and scheduling strategies to assign tasks. 
+such as choosing the best node to perform a task. \added{[We may need a more clear example of what a 'task' is]}
+Specifically, it utilizes filters and scheduling strategies to assign tasks. \added{[What is a filter? Would someone in this field know that or do we need to define? I certainly don't know.]}
 There are four filters available.
 \emph{ReadyFilter:} checks that the node is ready to schedule tasks;
 \emph{ResourceFilter:} checks that the node has enough resources available to run;
 \emph{PluginFilter:} checks that the node has a specific volume plugin installed.
 \emph{ConstraintFilter:} selects only nodes that match certain labels.
 If there are multiple nodes that pass the filtering process, 
-SwarmKit supports three scheduling strategies: spread (currently available), binpack, and random (under development based on Swarm Mode).
+SwarmKit supports three scheduling strategies: spread (currently available), binpack, and random (under development based on Swarm Mode). \added{[Is this still the case? I know its been a while since this project was last touched.]}
 \emph{Spread strategy:} places a container on the node with the fewest running containers.
 \emph{Binpack strategy:} places a container onto the most packed node in the cluster.
 \emph{Random strategy:} randomly places the container into the cluster.
@@ -112,7 +114,7 @@ Fig~\ref{fig:start-single} plots the average starting delay of and overall makes
 We conduct the experiments on two machines, M1 with 8GB memory, 4-core CPU and M2 has
 16GB memory and 8-core CPU. On each particular machine, M1 or M2, we can see that the more containers it hosts, the larger the starting delay 
 and makespan. However, M1 costs 23.67s on average to start 30 Tomcat containers and M2 costs 18.32s to start 40 containers. 
-Additionally, when trying to initiate 80 Tomcat containers, M1 fails to complete the job and M2 finishes it.
+Additionally, when trying to initiate 80 Tomcat containers, M1 fails to complete the job and M2 finishes it. \added{[So, is the point here that the nodes arent 'heterogenous' and that \#containers may not be a good way to decide which node is ready to handle a new task? That seems reasonable to me. We should say so explicitly]}
 
 
 

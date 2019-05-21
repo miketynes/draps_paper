@@ -24,13 +24,13 @@ It presents a statistical model, used to guide provisioning strategy, to charact
 
 Besides the investigations on standalone containers, the cluster of containers is another important aspect in this field.
 Docker Swarmkit~\cite{swarmkit} and Google Kubernetes~\cite{bernstein2014containers} are dominant cluster management tools in the market.
-The authors of ~\cite{gog2016firmament}, first, conduct a comparison study of scalabilities under both of them. Then, firmament is proposed
+The authors of ~\cite{gog2016firmament}, first, conduct a comparison study of scalabilities under both of them. Then, firmament is proposed \added{[it will need to be clarified that firmament is the name of a technology ]}
 to achieve low latency in large-scale clusters by using multiple min-cost max-flow algorithms. 
 On the other hand, focusing on workload scheduling, the paper~\cite{kaewkasi2017improvement} describes an Ant Colony Optimization algorithm
-for a cluster of Docker containers. However, the algorithm does not distinguish various containers, which usually have a divese requirements.
+for a cluster of Docker containers. However, the algorithm does not distinguish various containers, which usually have a divese requirements. \added{[more on how this is a disadvantage??]}
 
 In this paper, we investigate the container orchestration in the prospective of resource awareness. 
-While users can set limits on resources, containers are still competing for resources in a physical machine.
+While users can set limits on resources \added{[how?]}, containers are still competing for resources in a physical machine.
 Starting from different images, the containers target various services, which results in different requirements on resources.
 Through analyzing the dynamic resource demands, our work studies a node placement scheme that balance the resource usages in a 
 heterogeneous cluster. 

@@ -14,6 +14,7 @@
 \@writefile{loc}{\contentsline {subsection}{Deleted: \truncate {.3\textwidth }{s}}{1}}
 \@writefile{loc}{\contentsline {subsection}{Replaced: \truncate {.3\textwidth }{is largely intractable because it entails }}{1}}
 \@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{storing}}{1}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[reference chroot and others]}}{1}}
 \@writefile{loc}{\contentsline {subsection}{Replaced: \truncate {.3\textwidth }{platforms}}{1}}
 \@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[what does 'in the system view' mean here?]}}{1}}
 \@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[so on which machine is the user calling \texttt  {docker run}? I am used to standalone docker] }}{1}}
@@ -31,28 +32,50 @@
 \@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[clarify what a type is]}}{2}}
 \@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[how cherry picked is this?]}}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{2}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[it will need to be clarified that firmament is the name of a technology ]}}{2}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[more on how this is a disadvantage??]}}{2}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[how?]}}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {III}Background and Motivation}{2}}
 \newlabel{back}{{III}{2}}
 \newlabel{back@cref}{{[section][3][]III}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Docker Containers}{2}}
+\@writefile{loc}{\contentsline {subsection}{Replaced: \truncate {.3\textwidth }{\texttt  {docker run -it ubuntu bash}}}{2}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{Not sure how IEEE format wants in-line code examples. Further, what journal are we aiming for, and how do they want things? I should look at their templates.}}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Container Orchestration}{2}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[we need to say abit more about what that means. What about the state could be undesired vs desired?]}}{2}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[What is the point of this paragraph? We just jump in saying we can set limits at init time. (Note that we can also update them with \texttt  {docker update ...}). Is this even relevant for this paper, since we are talking about container \textit  {placement} which is a cluster-level, rather than container-level, decision process]}}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[We may need a more clear example of what a 'task' is]}}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[What is a filter? Would someone in this field know that or do we need to define? I certainly don't know.]}}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[Is this still the case? I know its been a while since this project was last touched.]}}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Starting Dockers on a single machine\relax }}{3}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:start-single}{{1}{3}}
 \newlabel{fig:start-single@cref}{{[figure][1][]1}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[So, is the point here that the nodes arent 'heterogenous' and that \#containers may not be a good way to decide which node is ready to handle a new task? That seems reasonable to me. We should say so explicitly]}}{3}}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}\texttt  {DRAPS}\nobreakspace  {} System}{3}}
 \newlabel{sys}{{IV}{3}}
 \newlabel{sys@cref}{{[section][4][]IV}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Framework of Manager and Worker Nodes}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[We weren't super clear about what it would mean to have \textit  {multiple managers}. I.e. is one of them just a backup in caise the main manager goes down?]}}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[Do we need more on this? Its certainly not enough for \textit  {me} to fully understand how Swarmkit works before DRAPS is added...]}}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}\texttt  {DRAPS}\nobreakspace  {} modules}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Docker Framework with \texttt  {DRAPS}\nobreakspace  {} Implemention\relax }}{3}}
-\newlabel{fig:drap}{{2}{3}}
-\newlabel{fig:drap@cref}{{[figure][2][]2}{3}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Problem Formulation}{3}}
+\@writefile{loc}{\contentsline {subsection}{Deleted: \truncate {.3\textwidth }{mainly}}{3}}
+\@writefile{loc}{\contentsline {subsection}{Replaced: \truncate {.3\textwidth }{are implemented }}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[is it applicaiton-level or container-level?]}}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[This is our first mention of time windows.]}}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[We havent defined a bottleneck. Does that get done in a later section? Is that conventional?]}}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[how]}}{3}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[for whom?]}}{3}}
 \citation{Bansal:2006:IAA,Meyerson:2013:OMLB,Im:2015:TBO}
 \citation{cloudlab}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[why are we talking about duplicated containers?]}}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Docker Framework with \texttt  {DRAPS}\nobreakspace  {} Implemention\relax }}{4}}
+\newlabel{fig:drap}{{2}{4}}
+\newlabel{fig:drap@cref}{{[figure][2][]2}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Problem Formulation}{4}}
 \newlabel{eq:work_util_ratio}{{1}{4}}
 \newlabel{eq:work_util_ratio@cref}{{[equation][1][]1}{4}}
+\@writefile{loc}{\contentsline {subsection}{Added: \truncate {.3\textwidth }{[Is this DRF?]}}{4}}
 \newlabel{eq:util_worker}{{2}{4}}
 \newlabel{eq:util_worker@cref}{{[equation][2][]2}{4}}
 \newlabel{eq:sched_problem}{{3}{4}}
@@ -81,26 +104,19 @@
 \newlabel{fig:understand}{{3}{5}}
 \newlabel{fig:understand@cref}{{[figure][3][]3}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Initial Container Placement}{5}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Container Placement on Managers\relax }}{5}}
-\newlabel{alg:initial}{{1}{5}}
-\newlabel{alg:initial@cref}{{[algorithm][1][]1}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Migrating a Container}{5}}
 \citation{aliyun}
 \citation{dockerhub}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Container Placement on Managers\relax }}{6}}
+\newlabel{alg:initial}{{1}{6}}
+\newlabel{alg:initial@cref}{{[algorithm][1][]1}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Performance Evaluation}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}}Implementation, Testbed and Workloads}{6}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Process \texttt  {DRAPS}\nobreakspace  {} Alert Message from $w_i$\relax }}{6}}
 \newlabel{alg:migrate}{{2}{6}}
 \newlabel{alg:migrate@cref}{{[algorithm][2][]2}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Performance Evaluation}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}}Implementation, Testbed and Workloads}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}}Evaluation Results}{6}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}1}Idle containers}{6}}
-\bibstyle{myunsrt}
-\bibdata{routing}
-\bibcite{aws}{1}
-\bibcite{azure}{2}
-\bibcite{vm}{3}
-\bibcite{jithin2014virtual}{4}
-\bibcite{medina2014survey}{5}
 \newlabel{fig:25worker1}{{4a}{7}}
 \newlabel{fig:25worker1@cref}{{[subfigure][1][4]4a}{7}}
 \newlabel{sub@fig:25worker1}{{a}{7}}
@@ -135,8 +151,13 @@
 \newlabel{fig:25net}{{6}{7}}
 \newlabel{fig:25net@cref}{{[figure][6][]6}{7}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}2}Loaded containers}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{7}}
-\@writefile{toc}{\contentsline {section}{References}{7}}
+\bibstyle{myunsrt}
+\bibdata{routing}
+\bibcite{aws}{1}
+\bibcite{azure}{2}
+\bibcite{vm}{3}
+\bibcite{jithin2014virtual}{4}
+\bibcite{medina2014survey}{5}
 \bibcite{xu2014managing}{6}
 \bibcite{wang2014fresh}{7}
 \bibcite{wang2015omo}{8}
@@ -149,17 +170,6 @@
 \bibcite{cheng2014efficient}{15}
 \bibcite{edos}{16}
 \bibcite{bhimani2016}{17}
-\bibcite{bhimani2017}{18}
-\bibcite{tang2012gpu}{19}
-\bibcite{du2015gpu}{20}
-\bibcite{zhao2012mesh}{21}
-\bibcite{felter2015updated}{22}
-\bibcite{slacker}{23}
-\bibcite{nathan2017comicon}{24}
-\bibcite{scope}{25}
-\bibcite{swarmkit}{26}
-\bibcite{bernstein2014containers}{27}
-\bibcite{gog2016firmament}{28}
 \newlabel{fig:worker1}{{7a}{8}}
 \newlabel{fig:worker1@cref}{{[subfigure][1][7]7a}{8}}
 \newlabel{sub@fig:worker1}{{a}{8}}
@@ -193,6 +203,19 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Value of I/O Wait on worker1\relax }}{8}}
 \newlabel{fig:iowait}{{9}{8}}
 \newlabel{fig:iowait@cref}{{[figure][9][]9}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{8}}
+\@writefile{toc}{\contentsline {section}{References}{8}}
+\bibcite{bhimani2017}{18}
+\bibcite{tang2012gpu}{19}
+\bibcite{du2015gpu}{20}
+\bibcite{zhao2012mesh}{21}
+\bibcite{felter2015updated}{22}
+\bibcite{slacker}{23}
+\bibcite{nathan2017comicon}{24}
+\bibcite{scope}{25}
+\bibcite{swarmkit}{26}
+\bibcite{bernstein2014containers}{27}
+\bibcite{gog2016firmament}{28}
 \bibcite{kaewkasi2017improvement}{29}
 \bibcite{Bansal:2006:IAA}{30}
 \bibcite{Meyerson:2013:OMLB}{31}
