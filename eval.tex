@@ -69,7 +69,7 @@ Docker Swarmkit framework.
 To evaluate \sol, we build a heterogeneous cluster on Alibaba Cloud~\cite{aliyun}, which supports multiple types of computing nodes.
 Specifically, we use three different types of instances, small (1 CPU core and 4G memory), medium (4 CPU cores and 8G memory)
 and large (8 CPU cores and 16G memory).
-In the small-scale testing, we setup a cluster with 3 nodes, one of each type, and configure it with 1 manager and 3 worker (1 of the 3 physical nodes 
+In the small-scale testing, we setup a cluster with 3 nodes, one of each type\added{[so again, are we talking about heterogeny \textit{of node type} in general?]}, and configure it with 1 manager and 3 worker (1 of the 3 physical nodes 
 hosts both manager and worker). In experiments on scalability, we configure the cluster with 1 manger and 9 workers that consist 3 instances of each type. 
 
 %We consider two different categories, workloads for the cluster and for services provided by containers.

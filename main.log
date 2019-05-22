@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 MAY 2019 21:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 MAY 2019 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1003,7 +1003,7 @@ File: figs/drap-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figs/drap-eps-converted-to.pdf used on input line 41.
 (pdftex.def)             Requested size: 201.60077pt x 93.33398pt.
 ) (./problem.tex
-** ATTENTION: \proof is deprecated (line 30). Use \IEEEproof instead.
+** ATTENTION: \proof is deprecated (line 31). Use \IEEEproof instead.
 Excluding 'comment' comment. Excluding 'comment' comment.) (./solution.tex
 Underfull \hbox (badness 7851) in paragraph at lines 2--10
 []\OT1/ptm/m/n/10 Previously, we dis-cussed the dif-fer-ent mod-ules in
@@ -1017,13 +1017,13 @@ Package epstopdf Info: Source file: <figs/cpu.eps>
 (epstopdf)                    size: 8928 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cpu-eps-converted-to.
 pdf figs/cpu.eps>
-(epstopdf)             \includegraphics on input line 19.
+(epstopdf)             \includegraphics on input line 21.
 Package epstopdf Info: Output file is already uptodate.
 <figs/cpu-eps-converted-to.pdf, id=31, 578.16pt x 289.08pt>
 File: figs/cpu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/cpu-eps-converted-to.pdf>
-Package pdftex.def Info: figs/cpu-eps-converted-to.pdf used on input line 19.
+Package pdftex.def Info: figs/cpu-eps-converted-to.pdf used on input line 21.
 (pdftex.def)             Requested size: 123.84283pt x 61.9216pt.
 Package epstopdf Info: Source file: <figs/mem.eps>
 (epstopdf)                    date: 2019-05-19 17:37:37
@@ -1033,14 +1033,14 @@ Package epstopdf Info: Source file: <figs/mem.eps>
 (epstopdf)                    size: 8865 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/mem-eps-converted-to.
 pdf figs/mem.eps>
-(epstopdf)             \includegraphics on input line 27.
+(epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/mem-eps-converted-to.pdf, id=32, 578.16pt x 289.08pt>
 File: figs/mem-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/mem-eps-converted-to.pdf>
-Package pdftex.def Info: figs/mem-eps-converted-to.pdf used on input line 27.
+Package pdftex.def Info: figs/mem-eps-converted-to.pdf used on input line 29.
 (pdftex.def)             Requested size: 123.84283pt x 61.9216pt.
 Package epstopdf Info: Source file: <figs/netio.eps>
 (epstopdf)                    date: 2019-05-19 17:37:37
@@ -1050,14 +1050,14 @@ Package epstopdf Info: Source file: <figs/netio.eps>
 (epstopdf)                    size: 8913 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/netio-eps-converted-t
 o.pdf figs/netio.eps>
-(epstopdf)             \includegraphics on input line 35.
+(epstopdf)             \includegraphics on input line 37.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/netio-eps-converted-to.pdf, id=33, 578.16pt x 289.08pt>
 File: figs/netio-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/netio-eps-converted-to.pdf>
-Package pdftex.def Info: figs/netio-eps-converted-to.pdf used on input line 35.
+Package pdftex.def Info: figs/netio-eps-converted-to.pdf used on input line 37.
 
 (pdftex.def)             Requested size: 123.84283pt x 61.9216pt.
 Package epstopdf Info: Source file: <figs/blockio.eps>
@@ -1068,7 +1068,7 @@ Package epstopdf Info: Source file: <figs/blockio.eps>
 (epstopdf)                    size: 8584 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/blockio-eps-converted
 -to.pdf figs/blockio.eps>
-(epstopdf)             \includegraphics on input line 43.
+(epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/blockio-eps-converted-to.pdf, id=34, 578.16pt x 289.08pt>
@@ -1076,15 +1076,14 @@ File: figs/blockio-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/blockio-eps-converted-to.pdf>
 Package pdftex.def Info: figs/blockio-eps-converted-to.pdf used on input line 4
-3.
+5.
 (pdftex.def)             Requested size: 123.84283pt x 61.9216pt.
  [4 <./figs/drap-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Excluding 'comment' comment. [5 <./figs/cpu-eps-converted-to.pdf> <./figs/mem-e
-ps-converted-to.pdf> <./figs/netio-eps-converted-to.pdf> <./figs/blockio-eps-co
-nverted-to.pdf>]) (./eval.tex
+ [5 <./figs/cpu-eps-converted-to.pdf> <./figs/mem-eps-converted-to.pdf> <./figs
+/netio-eps-converted-to.pdf> <./figs/blockio-eps-converted-to.pdf>]
+Excluding 'comment' comment.) (./eval.tex
 Package epstopdf Info: Source file: <figs/25memcpu1.eps>
 (epstopdf)                    date: 2019-05-19 17:37:36
 (epstopdf)                    size: 26173 bytes
@@ -1198,7 +1197,7 @@ Underfull \hbox (badness 2035) in paragraph at lines 64--68
 []\OT1/ptm/m/n/10 We im-ple-ment our new con-tainer place-ment scheme,
  []
 
-Excluding 'comment' comment. [6]
+[6] Excluding 'comment' comment.
 Package epstopdf Info: Source file: <figs/25containernum.eps>
 (epstopdf)                    date: 2019-05-19 17:37:37
 (epstopdf)                    size: 29241 bytes
@@ -1235,6 +1234,11 @@ File: figs/25net-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figs/25net-eps-converted-to.pdf used on input line 148
 .
 (pdftex.def)             Requested size: 120.95892pt x 84.67244pt.
+ [7 <./figs/25memcpu1-eps-converted-to.pdf> <./figs/25memcpu2-eps-converted-to.
+pdf> <./figs/25memcpu3-eps-converted-to.pdf> <./figs/25memcpu1g-eps-converted-t
+o.pdf> <./figs/25memcpu2g-eps-converted-to.pdf> <./figs/25memcpu3g-eps-converte
+d-to.pdf> <./figs/25containernum-eps-converted-to.pdf> <./figs/25net-eps-conver
+ted-to.pdf>]
 Package epstopdf Info: Source file: <figs/memcpu1.eps>
 (epstopdf)                    date: 2019-05-19 17:37:37
 (epstopdf)                    size: 25818 bytes
@@ -1246,7 +1250,7 @@ Package epstopdf Info: Source file: <figs/memcpu1.eps>
 (epstopdf)             \includegraphics on input line 170.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/memcpu1-eps-converted-to.pdf, id=93, 433.62pt x 216.81pt>
+<figs/memcpu1-eps-converted-to.pdf, id=137, 433.62pt x 216.81pt>
 File: figs/memcpu1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/memcpu1-eps-converted-to.pdf>
@@ -1264,7 +1268,7 @@ Package epstopdf Info: Source file: <figs/memcpu2.eps>
 (epstopdf)             \includegraphics on input line 178.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/memcpu2-eps-converted-to.pdf, id=94, 433.62pt x 216.81pt>
+<figs/memcpu2-eps-converted-to.pdf, id=138, 433.62pt x 216.81pt>
 File: figs/memcpu2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/memcpu2-eps-converted-to.pdf>
@@ -1282,7 +1286,7 @@ Package epstopdf Info: Source file: <figs/memcpu3.eps>
 (epstopdf)             \includegraphics on input line 186.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/memcpu3-eps-converted-to.pdf, id=95, 433.62pt x 216.81pt>
+<figs/memcpu3-eps-converted-to.pdf, id=139, 433.62pt x 216.81pt>
 File: figs/memcpu3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/memcpu3-eps-converted-to.pdf>
@@ -1300,7 +1304,7 @@ d-to.pdf figs/memcpu1g.eps>
 (epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/memcpu1g-eps-converted-to.pdf, id=96, 433.62pt x 216.81pt>
+<figs/memcpu1g-eps-converted-to.pdf, id=140, 433.62pt x 216.81pt>
 File: figs/memcpu1g-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/memcpu1g-eps-converted-to.pdf>
@@ -1318,7 +1322,7 @@ d-to.pdf figs/memcpu2g.eps>
 (epstopdf)             \includegraphics on input line 204.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/memcpu2g-eps-converted-to.pdf, id=97, 433.62pt x 216.81pt>
+<figs/memcpu2g-eps-converted-to.pdf, id=141, 433.62pt x 216.81pt>
 File: figs/memcpu2g-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/memcpu2g-eps-converted-to.pdf>
@@ -1336,7 +1340,7 @@ d-to.pdf figs/memcpu3g.eps>
 (epstopdf)             \includegraphics on input line 212.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/memcpu3g-eps-converted-to.pdf, id=98, 433.62pt x 216.81pt>
+<figs/memcpu3g-eps-converted-to.pdf, id=142, 433.62pt x 216.81pt>
 File: figs/memcpu3g-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/memcpu3g-eps-converted-to.pdf>
@@ -1354,7 +1358,7 @@ rted-to.pdf figs/120workload.eps>
 (epstopdf)             \includegraphics on input line 255.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/120workload-eps-converted-to.pdf, id=99, 361.35pt x 252.945pt>
+<figs/120workload-eps-converted-to.pdf, id=143, 361.35pt x 252.945pt>
 File: figs/120workload-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/120workload-eps-converted-to.pdf>
@@ -1372,23 +1376,14 @@ to.pdf figs/iowait.eps>
 (epstopdf)             \includegraphics on input line 262.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/iowait-eps-converted-to.pdf, id=100, 361.35pt x 252.945pt>
+<figs/iowait-eps-converted-to.pdf, id=144, 361.35pt x 252.945pt>
 File: figs/iowait-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/iowait-eps-converted-to.pdf>
 Package pdftex.def Info: figs/iowait-eps-converted-to.pdf used on input line 26
 2.
 (pdftex.def)             Requested size: 120.95892pt x 84.67244pt.
-) (./conclude.tex [7 <./figs/25memcpu1-eps-converted-to.pdf> <./figs/25memcpu2-
-eps-converted-to.pdf> <./figs/25memcpu3-eps-converted-to.pdf> <./figs/25memcpu1
-g-eps-converted-to.pdf> <./figs/25memcpu2g-eps-converted-to.pdf> <./figs/25memc
-pu3g-eps-converted-to.pdf> <./figs/25containernum-eps-converted-to.pdf> <./figs
-/25net-eps-converted-to.pdf>])
-(./main.bbl [8 <./figs/memcpu1-eps-converted-to.pdf> <./figs/memcpu2-eps-conver
-ted-to.pdf> <./figs/memcpu3-eps-converted-to.pdf> <./figs/memcpu1g-eps-converte
-d-to.pdf> <./figs/memcpu2g-eps-converted-to.pdf> <./figs/memcpu3g-eps-converted
--to.pdf> <./figs/120workload-eps-converted-to.pdf> <./figs/iowait-eps-converted
--to.pdf>])
+) (./conclude.tex) (./main.bbl [8])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1405,32 +1400,36 @@ Before submitting the final camera ready copy, remember to:
 
 [9
 
-] (./main.aux) ) 
+ <./figs/memcpu1-eps-converted-to.pdf> <./figs/memcpu2-eps-converted-to.pdf> <.
+/figs/memcpu3-eps-converted-to.pdf> <./figs/memcpu1g-eps-converted-to.pdf> <./f
+igs/memcpu2g-eps-converted-to.pdf> <./figs/memcpu3g-eps-converted-to.pdf> <./fi
+gs/120workload-eps-converted-to.pdf> <./figs/iowait-eps-converted-to.pdf>]
+(./main.aux) ) 
 Here is how much of TeX's memory you used:
  24698 strings out of 492995
  486923 string characters out of 6132704
- 508009 words of memory out of 5000000
+ 505009 words of memory out of 5000000
  27802 multiletter control sequences out of 15000+600000
  48805 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,77p,10388b,720s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/font
-s/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/u
-rw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on main.pdf (9 pages, 367921 bytes).
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on main.pdf (9 pages, 371351 bytes).
 PDF statistics:
  241 PDF objects out of 1000 (max. 8388607)
  162 compressed objects within 2 object streams
