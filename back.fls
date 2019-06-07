@@ -1,6 +1,0 @@
-PWD /Users/jenna/Dropbox/2017-docker
-INPUT /usr/local/texlive/2017/texmf.cnf
-INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT back.tex
-OUTPUT back.log
