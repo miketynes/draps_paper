@@ -1,0 +1,50 @@
+\section{Related Work}
+Virtualization serves as one of the fundamental technologies in cloud computing systems. 
+%In a virtualized computing environment, containers play an important role.
+As a popular application, virtual machines (VMs) have been studied for decades.
+However, in the reality, VMs suffer from noticeable
+performance overhead, large storage requirement, and limited scalability~\cite{xu2014managing}.
+More recently, containerization, a lightweight virtualization technique,  
+is drawing increasing popularity from different aspects and on different 
+platfroms~\cite{secpod, men2012interface, 
+cheng2014efficiently, cheng2013qbdj, cheng2016efficient, cheng2014efficient, edos, bhimani2016, bhimani2017,tang2012gpu, du2015gpu, zhao2012mesh}.
+
+The benefits and challenges of containerized systems have been studied in many aspects.
+A comprehensive performance study is presented in ~\cite{felter2015updated}, where it explores the traditional
+virtual machine deployments, and contrast them with the use
+of Linux containers. The evaluation focuses on overheads and experiments 
+that show containers' resulting performance to be equal or superior to VMs performances.
+Although containers outperform VMs, 
+the research~\cite{slacker} shows that the startup latency is considerably larger than expected.
+This is due to a layered and distributed image architecture, in which copying package data accounts
+for most of container startup time. The authors propose Slacker which can significantly reduce the startup latency.
+While Slacker reduces the amount of copying and transferring packages, if the image is locally available, the
+startup could be even faster. CoMICon~\cite{nathan2017comicon} addresses the problem by sharing the image in a cooperative manner. From different aspect, SCoPe~\cite{scope} tries to manage the provisioning time for large scale containers. 
+It presents a statistical model, used to guide provisioning strategy, to characterize the provisioning time in terms of system features.
+
+Besides the investigations on standalone containers, the cluster of containers is another important aspect in this field.
+Docker Swarmkit~\cite{swarmkit} and Google Kubernetes~\cite{bernstein2014containers} are dominant cluster management tools in the market.
+The authors of ~\cite{gog2016firmament}, first, conduct a comparison study of scalabilities under both of them. Then, firmament is proposed \added{[it will need to be clarified that firmament is the name of a technology ]}
+to achieve low latency in large-scale clusters by using multiple min-cost max-flow algorithms. 
+On the other hand, focusing on workload scheduling, the paper~\cite{kaewkasi2017improvement} describes an Ant Colony Optimization algorithm
+for a cluster of Docker containers. However, the algorithm does not distinguish various containers, which usually have a divese requirements. \added{[more on how this is a disadvantage??]}
+
+In this paper, we investigate the container orchestration in the prospective of resource awareness. 
+While users can set limits on resources \added{[how?]}, containers are still competing for resources in a physical machine.
+Starting from different images, the containers target various services, which results in different requirements on resources.
+Through analyzing the dynamic resource demands, our work studies a node placement scheme that balance the resource usages in a 
+heterogeneous cluster. 
+
+%From the network security aspect, 
+%authors in~\cite{wang2015benefit} build a virtual environment based on containers. The research shows that
+%although the container performs well in terms of performance, it is in securable in
+%terms of security control.
+
+
+%Containerized applications have been studied in many research projects.
+%becoming increasingly popular in both industry and academic.
+%Containerization
+%Due to the benefits in development and deployment brought by containers, lots of 
+%big players stepped into this area, such as Amazon, Microsoft and Google, and 
+%In~\cite{chung2016using}, the authors evaluate the performance
+%of containers and virtual machines by running benchmarks. 

@@ -1,0 +1,49 @@
+\section{Introduction}
+In the last decades, we have witnessed a spectacular information explosion over the Internet~\cite{explosion}. 
+Hundreds of thousands of users are comsuming the Internet through various services, such as websites, mobile applications, and online games.
+The service providers, at the back-end side, are supported by state-of-art infrastructures on the cloud, such as Amazon Web Service~\cite{aws} and
+Microsoft~\cite{azure}. 
+Targeting on providing the services at scale, 
+virtualization~\cite{virtualization} is one of the emerging technologies that used in data centers and cloud environments to 
+improve both hardware and development efficiency.
+
+At the system level, the virtual machine is a widely-adopted virtualization method~\cite{vm}, which isolate CPU, memory, 
+block I/O, and network resources, etc~\cite{jithin2014virtual}.
+In a large-scale system, however,
+providing services through virtual machines would mean the users are probably 
+running many duplicate instances of the same OS and many redundant boot volumes~\cite{medina2014survey}. 
+Recent research shows that virtual machines suffer from noticeable performance overhead, large storage requirement, and 
+limited scalability~\cite{xu2014managing}. 
+
+To address the limitations, containers are designed for deploying
+and running distributed applications without launching entire virtual machines. 
+Instead, multiple isolated service units of the application, 
+called containers, are sharing the host operating system and physical resources.
+The concept of container virtualization is yesterday's news, 
+Unix-like operating systems leveraged the technology for over a decade. 
+However, new containerization platforms, such as Docker, make it into the mainstream of application development.
+Based on previously available open source technologies 
+(e.g. cgroup), Docker introduces a way of simplifying the tooling required to create and manage containers.
+On a physical machine, containers are essentially just regular processes, in the system view, that enjoy a virtualized resource environment, not just CPU and
+memory, but also bandwidth, ports, disk i/o, etc. 
+
+We use ``Docker run image'' command to start a Docker container on physical machines. 
+In adition to the disk image that we would like to
+initiate, users can specify a few options, such as ``-m'' and ``-c'', to limit a container's access to resources. 
+While options set a maximum amount, the resource contention still happens among containers on every host machine.
+%Starting with various images, a container can provide different services, which leads to a diverse resource demands. 
+%For example, a clustering service, e.g. Kmeans, may need more computational power and a logging service, e.g. Logstash, 
+%may request more bandwidth. 
+Upon receiving the ``Docker run'' commands from clients, the cluster, as the first step, should select a 
+physical machine to host those containers. The default container placement scheme, named Spread, uses a bin-pack strategy and tries to
+assign a container on the node with the fewest running containers. 
+While Spread aims at equally distributing tasks among all nodes, it omits two major characteristics of the system. First of all,
+the nodes in a cluster do not necessary to be identical with each other. It is a common setting that there are multiple different node types, 
+in terms of total resource, in the cluster. For example, a cutting edge server can easily run more processes concurrently than a off-the-shelf desktop.
+Secondly, Starting with various images, a container can provide different services, which leads to a diverse resource demands. 
+For instance, a clustering service, e.g. Kmeans, may need more computational power and a logging service, e.g. Logstash, 
+may request more bandwidth. 
+
+
+
+

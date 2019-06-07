@@ -1,0 +1,26 @@
+set term post eps color solid enh font 'Times' 35 size 8,4
+set output "start-single-1.eps"
+set format x "%g %%"
+set xtics 1,1,5
+set format x "%g %%"
+set yrange [0:120]
+set grid
+set key font ",30"
+set key at 2,115
+set style data histogram
+set style histogram clustered gap 1
+set style fill solid border
+set xlabel "Number of Docker Containers" offset 0,0.5
+set ylabel "Time (Second)" offset 2.5
+unset border
+unset logscale x 
+unset logscale y 
+unset logscale z 
+set lmargin at screen 0.1;
+set rmargin at screen 0.99;
+set bmargin at screen 0.18;
+set tmargin at screen 0.98;
+
+plot 'start-single' using ($2):xticlabels(1) title "Average Completion M1" lc rgb "#FF0000", '' using ($4):xticlabels(1) title "Average Completion M2" lc rgb "#32CD32"
+#  "" using ($3):xticlabels(1) lc rgb "#7B68EE" title "Overall Makespan M1",
+#  '' using ($5):xticlabels(1) title "Overall Makespan M2" lc rgb "#B8860B"

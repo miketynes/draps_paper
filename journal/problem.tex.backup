@@ -1,0 +1,22 @@
+\section{Problem Formulation}
+
+
+\begin{table}[ht]
+\caption{Notation Table}
+ \centering
+ \small
+ \begin{tabular}{c l}
+  \hline
+  \hline
+  $M_id$ / $W_id$ &  Manager ID / Worker ID \\ 
+  \hline
+  $S_id$ / $c_{id}$ & Service ID / Worker ID \\
+  \hline
+  
+  
+ 
+  \hline
+  \hline
+\label{table:locations}
+\end{tabular}
+\end{table}
